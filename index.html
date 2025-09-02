@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirect on P key</title>
+</head>
+<body>
+  <script>
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'p' || event.key === 'P') {
+        window.location.href = 'https://classroom.google.com/';
+      }
+    });
+  </script>
+  <p>Press "P" to go to Google Classroom.</p>
+</body>
+</html>
