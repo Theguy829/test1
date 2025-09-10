@@ -255,6 +255,19 @@
                 ToggleInfo();
             });
         </script>
+
+        <!-- ✅ Redirect to Google on P key press -->
+        <script>
+            document.addEventListener('keydown', function(event) {
+                // Ignore key presses in input or textarea fields
+                if (event.target.tagName === 'INPUT' || event.target.tagName === 'TEXTAREA') return;
+
+                if (event.key.toLowerCase() === 'p') {
+                    window.location.href = 'https://classroom.google.com';
+                }
+            });
+        </script>
+
 </body>
 
 </html>
